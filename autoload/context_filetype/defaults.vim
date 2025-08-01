@@ -413,6 +413,14 @@ let g:context_filetype#defaults#_filetypes = #{
       \ }
 
 
+
+  let g:context_filetype#filetypes.svelte =
+  \ [
+  \   {'filetype' : 'coffee', 'start' : '<script lang="coffee">', 'end' : '</script>'},
+  \   {'filetype' : 'stylus', 'start' : '<style lang="stylus">', 'end' : '</style>'},
+  \   {'filetype' : 'pug', 'start' : '<template lang="pug">', 'end' : '</template>'},
+  \ ]
+
 let g:context_filetype#defaults#_same_filetypes = #{
       \   cpp: 'c',
       \   css: 'scss',
